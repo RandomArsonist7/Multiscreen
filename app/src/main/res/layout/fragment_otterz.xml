@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Otterz">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".otter">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="578dp"
+                android:background="#471C0D"
+                android:backgroundTint="#633217"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.015" />
+
+
+
+
+
+            <Button
+                android:id="@+id/otterSeal"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#6A7073"
+                android:text="Seal"
+                android:layout_margin="2dp"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/otterBear"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.052" />
+
+            <Button
+                android:id="@+id/Otter"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/gray"
+                android:text="Otter"
+                android:textColor="@color/gold"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/otterPenguin"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.054" />
+
+            <Button
+                android:id="@+id/otterBear"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/white"
+                android:text="bear"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/otterSeal"
+                app:layout_constraintHorizontal_bias="0.029"
+                app:layout_constraintStart_toEndOf="@+id/otterPenguin"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.055" />
+
+            <Button
+                android:id="@+id/otterPenguin"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:text="Penguin"
+                android:textColor="@color/teal_200"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:iconTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.054" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="157dp"
+                android:layout_height="247dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.937"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/otter" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="199dp"
+                android:layout_height="379dp"
+                android:layout_marginStart="62dp"
+                android:layout_marginEnd="93dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Otters are captivating semi-aquatic mammals known for their playful behavior and sleek, agile bodies. Found worldwide, except in Australia and Antarctica, otters belong to the Mustelidae family. They have streamlined bodies, webbed feet, and powerful tails, making them excellent swimmers. Their dense, water-repellent fur keeps them warm in cold water.  Otters inhabit diverse environments, including rivers, lakes, marshes, and coastal areas. While some, like sea otters, live in marine environments, others, like the North American river otter, thrive in freshwater habitats.  Known for their playful nature, otters engage in activities like sliding down mudbanks and playing with objects. They live in family groups and communicate through vocalizations, scent markings, and body language. Otters are carnivorous, feeding on fish, crustaceans, mollusks, and small mammals. They are skilled hunters, with sea otters famously using rocks to break open shellfish."
+                android:textSize="12sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.396"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/view"
+                app:layout_constraintVertical_bias="0.707" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>

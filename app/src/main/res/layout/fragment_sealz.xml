@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Sealz">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".seal">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="384dp"
+                android:background="#471C0D"
+                android:backgroundTint="#6A7073"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/Seal"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/gray"
+                android:text="Seal"
+                android:layout_margin="2dp"
+                android:textColor="@color/gold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/sealBear"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.052" />
+
+            <Button
+                android:id="@+id/sealOtter"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#573A25"
+                android:text="Otter"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/sealPenguin"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.054" />
+
+            <Button
+                android:id="@+id/sealBear"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/white"
+                android:text="Bear"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/Seal"
+                app:layout_constraintHorizontal_bias="0.029"
+                app:layout_constraintStart_toEndOf="@+id/sealPenguin"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.055" />
+
+            <Button
+                android:id="@+id/sealPenguin"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:text="Penguin"
+                android:textColor="@color/teal_200"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:iconTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.054" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="157dp"
+                android:layout_height="247dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.937"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/seal" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="213dp"
+                android:layout_height="291dp"
+                android:layout_marginStart="62dp"
+                android:layout_marginEnd="93dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Seals are marine mammals known for their streamlined bodies and flippers, making them excellent swimmers. They have thick blubber and fur for insulation in cold waters. Found worldwide in diverse marine environments, seals haul out on land or ice to rest, molt, and give birth.  Social and often seen in groups, seals communicate through vocalizations and body language. Their diet consists mainly of fish, squid, and crustaceans, hunted with agility underwater. Adaptations like large eyes and sensitive whiskers help them detect prey, and they can hold their breath for extended dives."
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.353"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintVertical_bias="0.241" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+</layout>

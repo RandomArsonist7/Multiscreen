@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Bearz">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".bear">
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="384dp"
+                android:background="#471C0D"
+                android:backgroundTint="#A6B5BC"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/bearSeal"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_margin="2dp"
+                android:backgroundTint="#6A7073"
+                android:text="Seal"
+                android:textColor="@color/teal_200"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/Bear"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.052" />
+
+            <Button
+                android:id="@+id/bearOtter"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="#573A25"
+                android:text="Otter"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/bearPenguin"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.054" />
+
+            <Button
+                android:id="@+id/Bear"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/gray"
+                android:text="bear"
+                android:textColor="@color/gold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:iconTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/bearSeal"
+                app:layout_constraintHorizontal_bias="0.029"
+                app:layout_constraintStart_toEndOf="@+id/bearPenguin"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.055" />
+
+            <Button
+                android:id="@+id/bearPenguin"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/black"
+                android:text="Penguin"
+                android:textColor="@color/teal_200"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                app:iconTint="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.054" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="191dp"
+                android:layout_height="275dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.99"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/polar_bear" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="194dp"
+                android:layout_height="410dp"
+                android:layout_marginStart="62dp"
+                android:layout_marginEnd="93dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Polar bears are the largest land carnivores, primarily found in the Arctic. They have thick fur and blubber for insulation against the cold. Polar bears inhabit ice-covered waters, relying on sea ice to hunt seals, their main prey. They are excellent swimmers and can travel long distances.  Solitary by nature, polar bears hunt seals by waiting near breathing holes or breaking into dens. They have powerful limbs and a keen sense of smell to detect prey. Their white fur provides camouflage, while their black skin absorbs sunlight for warmth.  Polar bears face threats from climate change, which reduces their sea ice habitat, as well as pollution and human activities. They are a crucial part of the Arctic ecosystem and symbolize the impacts of environmental change."
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintHorizontal_bias="0.37"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintVertical_bias="1.0" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</layout>

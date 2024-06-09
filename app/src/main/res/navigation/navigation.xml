@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mejn">
+    <fragment
+        android:id="@+id/mejn"
+        android:name="com.example.multiscreen1.Mejn"
+        android:label="Mejn"
+        tools:layout="@layout/fragment_mejn">
+        <action
+            android:id="@+id/action_main_to_seal"
+            app:destination="@id/sealz" />
+        <action
+            android:id="@+id/action_main_to_pingu"
+            app:destination="@id/pingu" />
+        <action
+            android:id="@+id/action_main_to_otter"
+            app:destination="@id/otterz" />
+        <action
+            android:id="@+id/action_main_to_bear"
+            app:destination="@id/bearz2" />
+    </fragment>
+    <fragment
+        android:id="@+id/otterz"
+        android:name="com.example.multiscreen1.Otterz"
+        android:label="Otterz"
+        tools:layout="@layout/fragment_otterz">
+        <action
+            android:id="@+id/action_otterz_to_sealz2"
+            app:destination="@id/sealz" />
+        <action
+            android:id="@+id/action_otterz_to_pingu2"
+            app:destination="@id/pingu" />
+        <action
+            android:id="@+id/action_otterz_to_bearz2"
+            app:destination="@id/bearz2" />
+    </fragment>
+    <fragment
+        android:id="@+id/pingu"
+        android:name="com.example.multiscreen1.Pingu"
+        android:label="Pingu"
+        tools:layout="@layout/fragment_pingu">
+        <action
+            android:id="@+id/action_pingu_to_sealz2"
+            app:destination="@id/sealz" />
+        <action
+            android:id="@+id/action_pingu_to_otterz2"
+            app:destination="@id/otterz" />
+        <action
+            android:id="@+id/action_pingu_to_bearz2"
+            app:destination="@id/bearz2" />
+    </fragment>/>
+    <fragment
+        android:id="@+id/sealz"
+        android:name="com.example.multiscreen1.Sealz"
+        android:label="Sealz"
+        tools:layout="@layout/fragment_sealz">
+        <action
+            android:id="@+id/action_sealz_to_otterz2"
+            app:destination="@id/otterz" />
+        <action
+            android:id="@+id/action_sealz_to_bearz2"
+            app:destination="@id/bearz2" />
+        <action
+            android:id="@+id/action_sealz_to_pingu2"
+            app:destination="@id/pingu" />
+    </fragment>
+    <fragment
+        android:id="@+id/bearz2"
+        android:name="com.example.multiscreen1.Bearz"
+        android:label="Bearz"
+        tools:layout="@layout/fragment_bearz">
+        <action
+            android:id="@+id/action_bearz2_to_pingu"
+            app:destination="@id/pingu" />
+        <action
+            android:id="@+id/action_bearz2_to_sealz"
+            app:destination="@id/sealz" />
+        <action
+            android:id="@+id/action_bearz2_to_otterz"
+            app:destination="@id/otterz" />
+    </fragment>/>
+</navigation>
